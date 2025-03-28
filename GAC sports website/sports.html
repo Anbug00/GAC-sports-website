@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports | Government Arts College</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    nav {
+      background-color: #004080;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffcc00;
+      transform: scale(1.05);
+    }
+    .sports-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 50px 40px;
+    }
+    .sport-item {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .sport-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+    .sport-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .sport-item:hover img {
+      transform: scale(1.05);
+    }
+    .sport-item p {
+      padding: 15px;
+      font-weight: 600;
+      font-size: 18px;
+      color: #003366;
+    }
+    @media(max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sports Section</h1>
+    <p>Explore the vibrant sports culture of Government Arts College, Nandanam</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="sports.html">Sports</a>
+    <a href="events.html">Events</a>
+    <a href="achievements.html">Achievements</a>
+  </nav>
+  <section class="sports-gallery">
+    <div class="sport-item"><img src="running.jpg" alt="Running"><p>Running</p></div>
+    <div class="sport-item"><img src="shotput.jpg" alt="Shotput"><p>Shotput</p></div>
+    <div class="sport-item"><img src="javelin.jpg" alt="Javelin Throw"><p>Javelin Throw</p></div>
+    <div class="sport-item"><img src="relay.jpg" alt="Relay"><p>Relay</p></div>
+    <div class="sport-item"><img src="highjump.jpg" alt="High Jump"><p>High Jump</p></div>
+    <div class="sport-item"><img src="longjump.jpg" alt="Long Jump"><p>Long Jump</p></div>
+    <div class="sport-item"><img src="triplejump.jpg" alt="Triple Jump"><p>Triple Jump</p></div>
+    <div class="sport-item"><img src="chess.jpg" alt="Chess"><p>Chess</p></div>
+    <div class="sport-item"><img src="carrom.jpg" alt="Carrom"><p>Carrom</p></div>
+    <div class="sport-item"><img src="tabletennis.jpg" alt="Table Tennis"><p>Table Tennis</p></div>
+    <div class="sport-item"><img src="badminton.jpg" alt="Badminton"><p>Badminton</p></div>
+    <div class="sport-item"><img src="boxing.jpg" alt="Boxing"><p>Boxing</p></div>
+    <div class="sport-item"><img src="basketball.jpg" alt="Basketball"><p>Basketball</p></div>
+    <div class="sport-item"><img src="volleyball.jpg" alt="Volleyball"><p>Volleyball</p></div>
+    <div class="sport-item"><img src="football.jpg" alt="Football"><p>Football</p></div>
+    <div class="sport-item"><img src="khokho.jpg" alt="Kho Kho"><p>Kho Kho</p></div>
+    <div class="sport-item"><img src="cricket.jpg" alt="Cricket"><p>Cricket</p></div>
+    <div class="sport-item"><img src="kabaddi.jpg" alt="Kabaddi"><p>Kabaddi</p></div>
+  </section>
+</body>
+</html>
